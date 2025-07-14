@@ -1,5 +1,5 @@
 import { createProxyMiddleware } from 'http-proxy-middleware';
-import config from './config';
+import config from './config.js';
 
 const graphQLProxy = createProxyMiddleware({
     target: `${config.guppyConfig.host}/graphql`,

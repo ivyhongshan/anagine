@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import log from './logger';
+import log from './logger.js';
 
 let inputConfig = {};
 if (process.env.ANAGINE_CONFIG_FILEPATH) {

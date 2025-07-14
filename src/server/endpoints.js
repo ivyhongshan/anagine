@@ -1,5 +1,5 @@
 import { createProxyMiddleware } from 'http-proxy-middleware';
-import config from './config';
+import config from './config.js';
 
 export const statusProxy = createProxyMiddleware({
     target: `${config.guppyConfig.host}/_status`,
