@@ -46,8 +46,8 @@ anagineRouter.get('/pdf', (req, res) => {
   res.download(filepath);
 });
 
-anagineRouter.get('/R/lm', (req, res) => {
-  const data = { x: [1, 2, 3], y: [3, 5, 7] };
+anagineRouter.post('/R/lm', (req, res) => {
+  const data = req.body || { x: [1, 2, 3], y: [3, 5, 7] };
   const inputJSON = JSON.stringify(data);
   const rScriptPath = path.join(__dirname, '../R/lm.R');
   log.info('rScriptPath:', rScriptPath);
