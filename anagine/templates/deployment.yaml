@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anagine
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anagine
+  template:
+    metadata:
+      labels:
+        app: anagine
+    spec:
+      containers:
+        - name: anagine
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 3000
+

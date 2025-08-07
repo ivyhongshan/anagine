@@ -1,0 +1,7 @@
+apiVersion: v2
+name: anagine
+description: Anagine custom Gen3 component
+type: application
+version: 0.1.0
+appVersion: "1.0"
+

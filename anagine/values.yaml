@@ -1,0 +1,7 @@
+image:
+  repository: ivyhongshan/anagine
+  tag: dev
+
+service:
+  port: 3000
+
